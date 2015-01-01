@@ -1,0 +1,16 @@
+<hr/>
+
+{#{% block title %}{{ article.title }}{% endblock %}#}
+
+{% block body %}
+    <article class="article">
+        <header>
+            <div class="date"><time datetime="{{ article.created|date('c') }}">{{ article.created|date('l, F j, Y') }}</time></div>
+            <h2>{{ article.id }}_ {{ article.title }}</h2>
+        </header>
+        <img src="{{ asset(['bundles/kachrafscroll/images/', article.image]|join) }}" alt="{{ article.title }} image not found" class="large" />
+        <div>
+            <p>{{ article.article }}</p>
+        </div>
+    </article>
+{% endblock %}

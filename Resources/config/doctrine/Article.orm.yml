@@ -1,0 +1,34 @@
+Kachraf\Bundle\ScrollBundle\Entity\Article:
+    type: entity
+    table: null
+    repositoryClass: Kachraf\Bundle\ScrollBundle\Entity\ArticleRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+        author:
+            type: string
+            length: 255
+        article:
+            type: string
+            length: 255
+        image:
+            type: string
+            length: 255
+        tags:
+            type: array
+        comments:
+            type: array
+        created:
+            type: string
+            length: 255
+        updated:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

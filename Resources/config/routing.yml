@@ -1,0 +1,18 @@
+homepage:
+    pattern:  /
+    defaults: { _controller: KachrafScrollBundle:Article:index }
+    methods:  [GET]
+
+ajax_call:
+    pattern:  /
+    defaults: { _controller: KachrafScrollBundle:Article:index2 }
+    requirements:
+        _method:  POST
+
+
+kachraf_scroll_aricle_show:
+    pattern:  /{id}
+    defaults: { _controller: KachrafScrollBundle:Article:show }
+    requirements:
+        _method:  GET
+        id: \d+

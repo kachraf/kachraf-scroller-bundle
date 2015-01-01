@@ -1,0 +1,39 @@
+{
+    "name": "kachraf/kachraf-scroll-bundle",
+    "type": "symfony-bundle",
+    "description": "Scroll bundle for Symfony2 to automate pagination and simplify sorting and other features",
+    "keywords": ["pager", "scroll", "scroller", "symfony2", "bundle", "kachraf", "load"],
+    "homepage": "http://git.kachraf.local/kmiladi/kachraf-scroll-bundle",
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "Kachraf Team",
+            "homepage": "http://kachraf.com"
+        },
+        {
+            "name": "Symfony2 Community",
+            "homepage": "http://git.kachraf.local/"
+        }
+    ],
+
+    "require": {
+        "php":                      ">=5.3.3",
+        "symfony/framework-bundle": "~2.0",
+        "twig/twig":                "~1.5"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "Kachraf\\Bundle\\ScrollBundle": ""
+        }
+    },
+
+    "target-dir": "Kachraf/Bundle/ScrollBundle",
+    
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.3.x-dev"
+        }
+    }
+}

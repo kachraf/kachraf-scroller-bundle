@@ -1,0 +1,13 @@
+parameters:
+    kachraf_scroll_scroller.class: Kachraf\Bundle\ScrollBundle\Manager\Scroll
+    scroller : scroller2
+services:
+    kachraf_scroll_scroller:
+        class : %kachraf_scroll_scroller.class%
+        scope: prototype
+        arguments:
+            name: %kachraf_scroll_scroller.name%
+            page_range: %kachraf_scroll_scroller.page_range%
+            template:
+                main_page : %kachraf_scroll_scroller.template.main_page%
+                page : %kachraf_scroll_scroller.template.page%
